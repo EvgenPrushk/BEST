@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbefb942-377b-47eb-a8aa-9203a3ee3fad" name="Default Changelist" comment="Feat: add new photo in app">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/PhotoPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/PhotoPicker.js" afterDir="false" />
+    <list default="true" id="cbefb942-377b-47eb-a8aa-9203a3ee3fad" name="Default Changelist" comment="Feat: add new photo in app refactor">
       <change beforePath="$PROJECT_DIR$/my-app/src/screens/CreateScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/screens/CreateScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +96,7 @@
       <workItem from="1623750445093" duration="5523000" />
       <workItem from="1623756421445" duration="1259000" />
       <workItem from="1623757731945" duration="66000" />
-      <workItem from="1623757898004" duration="10294000" />
+      <workItem from="1623757898004" duration="10492000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add to favorite">
       <created>1623748995104</created>
@@ -149,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623768935187</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Feat: add new photo in app refactor">
+      <created>1623771126400</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1623771126400</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +220,8 @@
     <MESSAGE value="feat: add delete post" />
     <MESSAGE value="feat: new file" />
     <MESSAGE value="Feat: add new photo in app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: add new photo in app" />
+    <MESSAGE value="Feat: add new photo in app refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: add new photo in app refactor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
