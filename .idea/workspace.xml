@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbefb942-377b-47eb-a8aa-9203a3ee3fad" name="Default Changelist" comment="feat: new file">
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/PhotoPicker.js" afterDir="false" />
+    <list default="true" id="cbefb942-377b-47eb-a8aa-9203a3ee3fad" name="Default Changelist" comment="Feat: add new photo in app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app" beforeDir="false" afterPath="$PROJECT_DIR$/my-app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/yarn-error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/PhotoPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/PhotoPicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/screens/CreateScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/screens/CreateScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +98,7 @@
       <workItem from="1623750445093" duration="5523000" />
       <workItem from="1623756421445" duration="1259000" />
       <workItem from="1623757731945" duration="66000" />
-      <workItem from="1623757898004" duration="8196000" />
+      <workItem from="1623757898004" duration="10294000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add to favorite">
       <created>1623748995104</created>
@@ -146,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623761321680</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Feat: add new photo in app">
+      <created>1623768935187</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1623768935187</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +214,8 @@
     <MESSAGE value="feat:" />
     <MESSAGE value="feat: add delete post" />
     <MESSAGE value="feat: new file" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: new file" />
+    <MESSAGE value="Feat: add new photo in app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: add new photo in app" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
