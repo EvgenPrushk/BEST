@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import { HeaderButtons, Item } from "react-navigation-header-buttons";
 import  { useDispatch, useSelector } from 'react-redux';
-// import { DATA } from "../data";
 import { AppHeaderIcon } from "../components/AppHeaderIcon";
 import { PostList } from "../components/PostList";
-import { loadPosts } from "../";
+import { loadPosts } from "../../src/store/actions/post";
 
 export const MainScreen = ({ navigation }) => {
   const openPostHandler = (post) => {
