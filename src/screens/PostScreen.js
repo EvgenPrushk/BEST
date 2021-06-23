@@ -90,7 +90,7 @@ PostScreen.navigationOptions = ({ navigation }) => {
 
   return {
     headerTitle: "Post from " + new Date(date).toLocaleDateString(),
-    headerRight: (
+    headerRight: ()=> (
       <HeaderButtons HeaderButtonComponent={AppHeaderIcon}>
         <Item title="Take text" iconName={iconName} onPress={toggleHandler} />
       </HeaderButtons>

@@ -41,7 +41,7 @@ export const MainScreen = ({ navigation }) => {
 
 MainScreen.navigationOptions = ({ navigation }) => ({
   headerTitle: "My blog",
-  headerRight: (
+  headerRight: ()=> (
     <HeaderButtons HeaderButtonComponent={AppHeaderIcon}>
       <Item
         title="Take phone"
@@ -50,7 +50,7 @@ MainScreen.navigationOptions = ({ navigation }) => ({
       />
     </HeaderButtons>
   ),
-  headerLeft:  (
+  headerLeft: ()=> (
     <HeaderButtons HeaderButtonComponent={AppHeaderIcon}>
       <Item
         title="Take phone"
