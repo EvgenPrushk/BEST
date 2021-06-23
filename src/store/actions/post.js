@@ -1,4 +1,4 @@
-import FileSystem from "expo-file-system";
+import * as FileSystem from 'expo-file-system'
 import { LOAD_POSTS, REMOVE_POST, TOGGLE_BOOKED, ADD_POST } from "../types";
 import { DB } from "../../db";
 
@@ -14,7 +14,7 @@ export const loadPosts = () => {
   };
 };
 
-export const toggleBooked = (post) => async (dispatch) => {
+export const togleBooked = (post) => async (dispatch) => {
   await DB.updatePost(post);
 
   dispatch({
