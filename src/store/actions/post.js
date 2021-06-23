@@ -5,32 +5,37 @@ import FileSystem from "expo-file-system/src/ExponentFileSystemShim";
 export const loadPosts = () => {
   return async (dispatch) => {
     // get post in database
-    const post = DB.getPosts();
+    const posts = await DB.getPosts();
     // dispath data in App
     dispatch({
       type: LOAD_POSTS,
-      payload: post,
+      payload: posts,
     });
   };
 };
 
-export const toogleBooked = (id) => {
-  return {
+export const toogleBooked = post => async (dispatch) => {
+  await DB.updatePost(post)
+
+  dispatch ({
     type: TOGGLE_BOOKED,
-    payload: id,
-  };
-};
-export const removePost = (id) => {
-  return {
-    type: REMOVE_POST,
-    payload: id,
-  };
+    payload: post.id,
+  });
 };
 
-export const addPost = (post) => async (dispatch) => {
+export const removePost = (id) => async (dispatch) => {
+  await DB.removePost(id)
+  dispatch ({
+    type: REMOVE_POST,
+    payload: id,
+  });
+};
+
+export const addPost = (post) => async dispatch => {
   // file name
   const fileName = post.img.split("/").pop();
   const newPath = FileSystem.documentDirectory + fileName;
+  
   try {
     await FileSystem.moveAsync({
       to: newPath,
