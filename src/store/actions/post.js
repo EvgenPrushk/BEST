@@ -1,6 +1,6 @@
 import { ADD_POST, LOAD_POSTS, REMOVE_POST, TOGGLE_BOOKED } from "../types";
 import { DB } from "../../db";
-import FileSystem from "expo-file-system/src/ExponentFileSystemShim";
+import FileSystem from "expo-file-system";
 
 export const loadPosts = () => {
   return async (dispatch) => {
