@@ -32,7 +32,7 @@ export const PostScreen = ({ navigation }) => {
   }, [booked]);
 
   const toggleHandler = useCallback(() => {
-    console.log(postId);
+ 
     dispatch(toogleBooked(post));
   }, [dispatch, post]);
 
