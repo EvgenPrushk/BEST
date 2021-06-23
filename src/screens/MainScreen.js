@@ -4,6 +4,9 @@ import  { useDispatch, useSelector } from 'react-redux';
 import { AppHeaderIcon } from "../components/AppHeaderIcon";
 import { PostList } from "../components/PostList";
 import { loadPosts } from "../../src/store/actions/post";
+import { View, StyleSheet, ActivityIndicator } from "react-native";
+
+import { THEME } from "../theme";
 
 export const MainScreen = ({ navigation }) => {
   const openPostHandler = (post) => {
@@ -23,6 +26,15 @@ export const MainScreen = ({ navigation }) => {
 
 // we get acces to the state = 
   const allPosts = useSelector(state => state.post.allPosts)
+  const loading = useSelector(state => state.post.loading)
+
+  if (loading) {
+    return (
+      <View style={styles.center}>
+        <ActivityIndicator color={THEME.MAIN_COLOR} />
+      </View>
+    )
+  }
 
   return <PostList data={allPosts} onOpen={openPostHandler} />;
 };
@@ -48,3 +60,11 @@ MainScreen.navigationOptions = ({ navigation }) => ({
     </HeaderButtons>
   ),
 });
+
+const styles = StyleSheet.create({
+  center: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+})
