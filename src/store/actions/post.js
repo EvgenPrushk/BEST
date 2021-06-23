@@ -14,7 +14,7 @@ export const loadPosts = () => {
   };
 };
 
-export const togleBooked = (post) => async (dispatch) => {
+export const toogleBooked = (post) => async (dispatch) => {
   await DB.updatePost(post);
 
   dispatch({
