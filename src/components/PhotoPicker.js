@@ -2,19 +2,34 @@ import React, { useState } from "react";
 import * as ImagePicker from "expo-image-picker";
 import * as Permissions from "expo-permissions";
 
+
 import { View, StyleSheet, Button, Image, Alert } from "react-native";
 
 async function askForPermission() {
   const { status } = await Permissions.askAsync(
     Permissions.CAMERA,
-    Permissions.CAMERA_ROLL
+    Permissions.MEDIA_LIBRARY
   );
   if (status !== "granted") {
     Alert.alert("Error", "You have not give permissions for create photo");
-    return false;
+    return false;  
   }
   return true;
 }
+
+// async function askForPermission() {
+//   const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync(
+// //     Camera,
+   
+// //   );
+// //   if (status !== "granted") {
+// //     Alert.alert("Error", "You have not give permissions for create photo");
+// //     return false;
+// //   }
+// //   return true;
+// // }
+// ImagePicker.requestMediaLibraryPermissionsAsync();
+
 
 export const PhotoPicker = ({ onPick }) => {
   //State for image
