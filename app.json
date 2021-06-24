@@ -23,7 +23,11 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.prushakdev.self_blog_rn_app",
+      "versionCode": 1, 
+      "permissions": ["CAMERA", "WRITE_EXTERNAL_STORAGE"]
+      
     },
     "web": {
       "favicon": "./assets/favicon.png"
